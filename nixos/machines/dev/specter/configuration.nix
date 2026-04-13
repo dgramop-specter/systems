@@ -20,11 +20,21 @@
   boot.plymouth.logo = ./boot.png;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.trusted-users = ["dgramop"];
+  nix.distributedBuilds = true;
   nix.buildMachines = [
     {
       system = "x86_64-linux";
       sshUser = "builder";
       hostName = "nixos-builder";
+    }
+    {
+      hostName = "nixos-atlas-alpha";
+      sshUser = "builder";
+      system = "aarch64-linux";
+      maxJobs = 64;
+      speedFactor = 2;
+      supportedFeatures = [ "nixos-test" "benchmark" "big-parallel" "kvm" ];
     }
   ];
   nixpkgs.config.allowUnfree = true;

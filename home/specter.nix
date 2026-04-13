@@ -27,6 +27,7 @@
       chromium
       libreoffice
       papers
+      alsa-utils
     ];
 
     home.file.".config/i3/config".text = import ./i3.conf.nix { alacritty = pkgs.alacritty; rofi = pkgs.rofi; flameshot = pkgs.flameshot; };

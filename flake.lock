@@ -25,11 +25,11 @@
     "dgramop-systems": {
       "flake": false,
       "locked": {
-        "lastModified": 1775693327,
-        "narHash": "sha256-Dfsh9MnnWUEjJFJFbjAklDbymC2XHSoaGVWqr+9sYM0=",
+        "lastModified": 1776070593,
+        "narHash": "sha256-7UZ4lUy70SWmgXEMUAElkgC1YmOIndy8vIufU7wttW0=",
         "owner": "dgramop",
         "repo": "systems",
-        "rev": "a5323568b7fa4a74178d29d679caf5e96889d422",
+        "rev": "a9556c02865c9ba14bf98b7b0297f184c7feb694",
         "type": "github"
       },
       "original": {
